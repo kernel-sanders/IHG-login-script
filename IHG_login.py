@@ -18,6 +18,9 @@ cookie_jar = cookielib.CookieJar()
 opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cookie_jar))
 urllib2.install_opener(opener)
 
+# log out in order to reset our 'time left' to 24 full hours
+urllib2.urlopen("http://rap.nnu.com/logout").read()
+
 # acquire cookie
 url_1 = 'https://rap.nnu.com/login'
 req = urllib2.Request(url_1)
