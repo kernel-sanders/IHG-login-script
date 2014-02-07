@@ -9,7 +9,7 @@ Python 2.7
 from __future__ import print_function
 import urllib, urllib2, cookielib
 
-MAC = 'D4:CA:6D:3F:21:8A'
+MAC = 'XX:XX:XX:XX:XX:XX'
 REQUESTED_IP = '10.59.0.191'
 
 print("Logging in to IHG", end='')
